@@ -1,0 +1,136 @@
+body {
+    width: 375px;
+    height: 400px;
+    background: #4C5B5C;
+    border-radius: 10px;
+    flex: 1;
+    margin: 0px;
+    -moz-transition: all ease-in-out 0.13s;
+    -o-transition: all ease-in-out 0.13s;
+    -webkit-transition: all ease-in-out 0.13s;
+    transition: all ease-in-out 0.13s;
+}
+
+#app {
+    
+}
+
+.menu-tabs {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu-tabs li {
+    display: inline-block;
+    padding-right: 25px;
+    text-align: center;
+    transition: all cubic-bezier(.23,1,.32,1) 0.3s;
+
+}
+
+.menu-tabs li:first-child {
+
+    padding-left: 25px;
+
+}
+
+.menu-tabs li:hover {
+    cursor: pointer;
+}
+
+.menu-tabs li:hover > .tab-title:after{
+    opacity: 1;
+}
+
+.menu-tabs li:hover > .tab-title{
+    color: #EFF1F3;
+}
+
+.menu-tabs li .tab-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 55px;
+    color: #89919A;
+    position: relative;
+    transition: all cubic-bezier(.23,1,.32,1) 0.3s;
+
+}
+
+.menu-tabs li .tab-title.active {
+    color: #EFF1F3;
+
+}
+
+.menu-tabs li .tab-title.active:after {
+    opacity: 1;
+
+}
+
+.menu-tabs li .tab-title:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: auto;
+    height: 3px;
+    opacity: 0;
+    /* background-color: #67E0A3; */
+    -moz-transition: all ease-in-out 0.13s;
+    -o-transition: all ease-in-out 0.13s;
+    -webkit-transition: all ease-in-out 0.13s;
+    transition: all ease-in-out 0.13s;
+}
+
+
+
+.menu-tabs li:nth-child(1) .tab-title:after {
+    
+    /* background-color: #67E0A3; */
+
+    background: linear-gradient(90deg, #EC008C 0%, #FC6767 100%);
+    
+}
+
+.menu-tabs li:nth-child(2) .tab-title:after {
+    
+    /* background-color: #1ce783; */
+
+    background: linear-gradient(90deg, #1ce783 0%, #00D9F5 100%);
+    
+}
+
+.menu-tabs li:nth-child(3) .tab-title:after {
+    
+    /* background-color: #67E0A3; */
+    /* background: linear-gradient(90deg, #4776E6 0%, #8E54E9 100%); */
+    
+    background: linear-gradient(90deg, #F46B45 0%, #EEA849 100%);
+    
+}
+
+.tab-content {
+    padding-left: 25px;
+    padding-top: 25px;
+}
+
+.stat-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #E2E2E2;
+}
+
+.stat-value {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #67E0A3;
+}
