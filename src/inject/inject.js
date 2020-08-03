@@ -1,5 +1,6 @@
 
 $(window).on("load", function() {
+
 	console.log("--- STARTING SKIPFLIX ---");
 	
 	// Checks the DOM every half second to see if the buttons exists
@@ -26,6 +27,11 @@ $(window).on("load", function() {
 			justClicked = true;
 		}
 
+		// if (!$('*[data-uia="next-episode-seamless-button"]').length) {
+		// 	$('*[data-uia="next-episode-seamless-button"]')[0].click();
+		// }
+		
+
 		// if ($("div.end-card__metadata-area-play-button").length) {
 
 		// }
@@ -39,7 +45,7 @@ $(window).on("load", function() {
 
 		
 		
-	}, 500);
+	}, 10);
 	
 
 });

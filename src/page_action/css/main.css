@@ -1,6 +1,6 @@
 body {
-    width: 375px;
-    height: 400px;
+    width: 400px;
+    height: 475px;
     background: #4C5B5C;
     border-radius: 10px;
     flex: 1;
@@ -12,7 +12,90 @@ body {
 }
 
 #app {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#app:after {
+    content: "v 0.1";
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #89919A;
+    letter-spacing: 0.01px;
+}
+
+.info-groups {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.info-groups li {
     
+    padding-right: 25px;
+    text-align: left;
+    margin-bottom: 25px;
+    transition: all cubic-bezier(.23,1,.32,1) 0.3s;
+
+}
+
+.toggle-container {
+    padding-top: 5px;
+}
+
+.toggle-container .toggle-pill{
+    width: 50px;
+    height: 20px;
+    position: relative;
+    background-color: #C2C2C2;
+    border-radius: 30px;
+    transition: all cubic-bezier(.23,1,.32,1) 0.17s;
+
+}
+
+.toggle-container .toggle-pill.active{
+    width: 50px;
+    height: 20px;
+    position: relative;
+    background-color: #67E0A3;
+    border-radius: 30px;
+    box-shadow: 0px 16px 24px rgba(103, 224, 163, 0.1), 0px 2px 6px rgba(103, 224, 163, 0.08), 0px 0px 1px rgba(0, 0, 0, 0.04);
+}
+
+.toggle-container .toggle-pill:hover{
+    cursor: pointer;
+}
+
+.toggle-container .toggle-pill:after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 30px;
+    background: #EFF1F3;
+    box-shadow: -2px 0px 16px rgba(0, 0, 0, 0.1);
+    left: 1px;
+    top: 1px;
+    transition: all cubic-bezier(.23,1,.32,1) 0.17s;
+}
+
+.toggle-container .toggle-pill.active:after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 30px;
+    background: #EFF1F3;
+    box-shadow: -2px 0px 16px rgba(0, 0, 0, 0.1);
+    left: 31px;
+    top: 1px;
+    transition: all cubic-bezier(.23,1,.32,1) 0.17s;
 }
 
 .menu-tabs {
